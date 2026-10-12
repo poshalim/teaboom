@@ -1,0 +1,36 @@
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: var(--fs-body);
+  line-height: 1.55;
+}
+
+body.is-locked {
+  overflow: hidden;
+}
+
+.container {
+  width: min(100% - var(--container-pad), var(--container));
+  margin-inline: auto;
+}
+
+.page {
+  padding-block: var(--page-pad-top) var(--page-pad-bottom);
+}
+
+.skip-link {
+  position: absolute;
+  z-index: var(--z-overlay);
+  padding: var(--space-2) var(--space-3);
+  background: var(--ink);
+  color: var(--gold);
+  font-weight: var(--fw-bold);
+  transform: translateY(-100%);
+}
+
+.skip-link:focus {
+  transform: none;
+}

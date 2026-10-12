@@ -1,0 +1,53 @@
+.ellipsis {
+  display: block;
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.caps {
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 0.0625rem;
+  height: 0.0625rem;
+  margin: -0.0625rem;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip-path: inset(50%);
+}
+
+.frame-photo {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.price-old {
+  color: var(--muted);
+  font-weight: var(--fw-semibold);
+  text-decoration: line-through;
+}
+
+.price-now {
+  color: var(--sale);
+  font-weight: var(--fw-black);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.price-off {
+  border: 1px solid #f3c1c1;
+  color: var(--sale);
+  font-weight: var(--fw-black);
+  line-height: 1.2;
+  white-space: nowrap;
+}
