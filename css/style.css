@@ -8,7 +8,7 @@
 @import "components/product.css";
 
 .hover-invert:hover,
-.hover-invert:focus {
+.hover-invert:focus-visible {
   background: var(--ink);
   color: var(--gold);
 }
